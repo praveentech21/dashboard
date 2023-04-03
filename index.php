@@ -11,18 +11,18 @@ $run2 = mysqli_query($con,"select * from prizes");
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SRKR</title>
+    <title>SRKR Campus Cafe</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="Bhavani/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="Bhavani/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="Bhavani/css/style.css">
+    <link rel="shortcut icon" href="Bhavani/img/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="index.php"><img src="assets/images/logo.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo" href="index.php"><img src="Bhavani/img/logo.png" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <ul class="navbar-nav navbar-nav-right">
@@ -153,20 +153,6 @@ $run2 = mysqli_query($con,"select * from prizes");
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
-    <script src="assets/js/todolist.js"></script>
     <!-- End custom js for this page -->
   </body>
 </html>
