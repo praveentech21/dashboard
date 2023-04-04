@@ -1,8 +1,8 @@
 <?php
 
 include "link.php";
-$run1 = mysqli_query($con,"select * from winners");
-$run2 = mysqli_query($con,"select * from prizes");
+$run1 = mysqli_query($con,"select * from winners order by score desc");
+$run2 = mysqli_query($con,"select * from prizes order by score desc");
 ?>
 
 <!DOCTYPE html>
