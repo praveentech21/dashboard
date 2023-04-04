@@ -16,6 +16,7 @@ $run2 = mysqli_query($con,"select * from prizes");
     <link rel="stylesheet" href="Bhavani/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="Bhavani/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="Bhavani/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="shortcut icon" href="Bhavani/img/favicon.png" />
   </head>
   <body>
@@ -43,19 +44,16 @@ $run2 = mysqli_query($con,"select * from prizes");
             <li class="nav-item">
               <a class="nav-link" href="index.php">
                 <span class="menu-title">Home</span>
-                <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="register.php">
                 <span class="menu-title">Register Now</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
               </a>
             </li>            
             <li class="nav-item">
               <a class="nav-link" href="update.php">
                 <span class="menu-title">Update</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
             </li>
           </ul>
@@ -66,10 +64,7 @@ $run2 = mysqli_query($con,"select * from prizes");
 
             
             <div class="page-header">
-              <h3 class="page-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2">
-                  <i class="mdi mdi-home"></i>
-                </span> Dashboard
+              <h3 class="page-title">Dashboard
               </h3>
               
             </div>

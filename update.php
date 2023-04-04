@@ -42,19 +42,16 @@ $run = mysqli_query($con,"select * from players where status=0");
             <li class="nav-item">
               <a class="nav-link" href="index.php">
                 <span class="menu-title">Home</span>
-                <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="register.php">
                 <span class="menu-title">Register Now</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
               </a>
             </li>            
             <li class="nav-item">
               <a class="nav-link" href="update.php">
                 <span class="menu-title">Update</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
             </li>
           </ul>
