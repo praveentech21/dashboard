@@ -96,6 +96,7 @@ $run = mysqli_query($con,"select * from players where status=0");
                                       $query = "insert into prizes values ('$sname','$dept','$score',$dis)";
                                       $run = mysqli_query($con,$query);
                                       $run = mysqli_query($con,"update players set speed = $speed ,accur = $accur, status = 1 where regno ='$reg'");
+                                      header("location:index.php");
                                     }                              
                                     }
                                 }                        
