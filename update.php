@@ -85,19 +85,22 @@ $run = mysqli_query($con,"select * from players where status=0");
                                     $dept = $row['deptm'];
                                     if ($speed >= 45 and $accur >= 85) {
                                       $score = ($speed/60)*60 + ($accur/100)*40;
-                                      $query = "insert into winners values ('$sname','$dept','$score')";
-                                      $run = mysqli_query($con,$query);
+                                      $run = mysqli_query($con,"insert into winners values ('$sname','$dept','$score')");
                                       $run = mysqli_query($con,"update players set speed = $speed ,accur = $accur, status = 1 where regno ='$reg'");
+                                      header("location:index.php");
                                     }
                                     else if($speed >= 25 and $accur >= 60){
                                       echo "Rama Rama Ragu Rama";
                                       $score = ($speed/60)*60 + ($accur/100)*40;
                                       $dis = $score/3;
-                                      $query = "insert into prizes values ('$sname','$dept','$score',$dis)";
-                                      $run = mysqli_query($con,$query);
+                                      $run = mysqli_query($con,"insert into prizes values ('$sname','$dept','$score',$dis)");
                                       $run = mysqli_query($con,"update players set speed = $speed ,accur = $accur, status = 1 where regno ='$reg'");
-                                      header("location:index.php");
-                                    }                              
+                                    }   
+                                    else {
+                                      $score =0;
+                                      $dis = 0;
+                                      $run = mysqli_query($con,"update players set speed = $speed ,accur = $accur, status = 1 where regno ='$reg'");
+                                    }                           
                                     }
                                 }                        
                             }
