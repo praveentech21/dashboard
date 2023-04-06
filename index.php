@@ -79,15 +79,16 @@ $run2 = mysqli_query($con,"select * from prizes order by score desc");
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Name</th>
-                          <th>Points</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Points</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php
                           if (mysqli_num_rows($run1) > 0) {
                             while ($row = mysqli_fetch_assoc($run1)) {
-                                echo "<tr><td>" . $row["sname"] . "</td><td>" . $row["score"] . "</td></tr>";
+                                echo "<tr><td>" . $row["sname"] . "</td><td>".$row['dept']."</td><td>"  . $row["score"] . "</td></tr>";
                             }
                         } else {
                             echo "0 results";
