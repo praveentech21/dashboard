@@ -1,4 +1,4 @@
 <?php
-// $con = new mysqli("localhost", "root", "", "game1");
-$con = new mysqli("localhost", "saipraveen", "Shiva143@Bhavani", "montype");
+// $con = new mysqli("localhost", "game", "Montype#csd1", "game1");
+$con = new mysqli("localhost", "game", "Montype#csd1", "montype");
 ?>
