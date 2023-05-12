@@ -17,6 +17,24 @@ $run2 = mysqli_query($con,"select * from prizes order by score desc");
     <link rel="stylesheet" href="Bhavani/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="shortcut icon" href="Bhavani/img/favicon.png" />
+    <style>
+      .banner-container {
+        position: relative;
+        height: 40vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      .banner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      .banner.active {
+        opacity: 1;
+      }
+    </style>
   </head>
   <!-- Head End Shiva -->
   <!-- Body Started Shiva -->
@@ -42,6 +60,23 @@ $run2 = mysqli_query($con,"select * from prizes order by score desc");
 
       <!-- Content Stared Shiva -->
       <div class="content-wrapper">
+        
+        <!-- Banner Started Shiva -->
+
+        <div class="banner-container">
+          <div class="banner" id="banner1">
+            <img src="Bhavani/img/1.png" alt="Banner 1">
+          </div>
+          <div class="banner" id="banner2">
+            <img src="Bhavani/img/2.png" alt="Banner 2">
+          </div>
+          <div class="banner" id="banner3">
+            <img src="Bhavani/img/3.png" alt="Banner 3">
+          </div>
+        </div>
+
+        <!-- Banner Ended Shiva -->
+
         <div class="page-header">
           <h3 class="page-title">Dashboard</h3>
         </div>
@@ -130,7 +165,18 @@ $run2 = mysqli_query($con,"select * from prizes order by score desc");
       <!-- Fotterr End Shiva -->
       
     </div>
+    <script>
+      var banners = document.querySelectorAll('.banner');
+      var currentBanner = 0;
 
-    </div>
+      function changeBanner() {
+        banners[currentBanner].classList.remove('active');
+        currentBanner = (currentBanner + 1) % banners.length;
+        banners[currentBanner].classList.add('active');
+      }
+
+      setInterval(changeBanner, 5000);
+
+    </script>
   </body>
 </html>
