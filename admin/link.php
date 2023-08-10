@@ -1,3 +1,3 @@
 <?php
-$con = new mysqli("localhost", "game", "Montype#csd1", "montype");
+$con = new mysqli("localhost", "root", "", "montype");
 ?>  

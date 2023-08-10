@@ -1,5 +1,5 @@
 <?php
-$con = new mysqli("localhost", "game", "Montype#csd1", "montype");
+$con = new mysqli("localhost", "root", "", "montype");
 $run1 = mysqli_query($con,"select * from winners order by score desc");
 $run2 = mysqli_query($con,"select * from prizes order by score desc");
 ?>
